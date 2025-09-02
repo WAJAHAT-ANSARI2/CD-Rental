@@ -5,6 +5,7 @@ import Home from "./pages/Home"
 import cdDetails from "./pages/CdDetails"
 import Cds from "./pages/Cds"
 import MyBookings from "./pages/MyBookings"
+import Footer from "./components/Footer"
 
 const App = () => {
 
@@ -19,8 +20,11 @@ const App = () => {
           <Route path="/" element={<Home/>}/>
           <Route path="/cds-details/:id" element={<cdDetails/>}/>
           <Route path="/my-bookings" element={<MyBookings/>}/>
-        </Routes>
+        </Routes> 
+        {!isOwnerPath && <Footer />}
     </>
+
+   
   )
 }
 
