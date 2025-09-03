@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "./Title";
 import { assets, dummyCarData } from "../assets/assets";
-import CdCards from "./CdCards";
+import CdCards from "./CarCards";
 import { useNavigate } from "react-router-dom";
 
 const FeaturedSection = () => {

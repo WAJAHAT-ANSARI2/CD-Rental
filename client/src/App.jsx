@@ -2,10 +2,10 @@ import React, { useState } from "react"
 import Navbar from "./components/Navbar"
 import { Route, Routes, useLocation } from "react-router-dom"
 import Home from "./pages/Home"
-import cdDetails from "./pages/CdDetails"
-import Cds from "./pages/Cds"
 import MyBookings from "./pages/MyBookings"
 import Footer from "./components/Footer"
+import CarDetails from "./pages/CarDetails"
+import Cars from "./pages/Car"
 
 const App = () => {
 
@@ -18,7 +18,8 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home/>}/>
-          <Route path="/cds-details/:id" element={<cdDetails/>}/>
+          <Route path="/car-details/:id" element={<CarDetails/>}/>
+          <Route path="/cars" element={<Cars />}/>
           <Route path="/my-bookings" element={<MyBookings/>}/>
         </Routes> 
         {!isOwnerPath && <Footer />}

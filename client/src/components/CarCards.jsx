@@ -2,7 +2,7 @@ import React from "react";
 import { assets } from "../assets/assets";
 import { useNavigate } from "react-router-dom";
 
-const CdCards = ({ car }) => {
+const CarCards = ({ car }) => {
   const currency = import.meta.env.VITE_CURRENCY;
   const navigate = useNavigate()
 
@@ -65,4 +65,4 @@ const CdCards = ({ car }) => {
   );
 };
 
-export default CdCards;
+export default CarCards;

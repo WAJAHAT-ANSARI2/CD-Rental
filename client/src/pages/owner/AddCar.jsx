@@ -1,6 +1,6 @@
 import React from "react";
 
-const cdDetails = () => {
+const AddCar = () => {
     return(
         <div>
 
@@ -8,4 +8,4 @@ const cdDetails = () => {
     )
 }
 
-export default cdDetails
+export default AddCar
